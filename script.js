@@ -8,6 +8,7 @@ document.body.style.backgroundColor = colors[index++];
 });
 */
 
+/*GENERATES RANDOM NUMBER TO SET BACKGROUND COLOR ON CLICK*/
 const setBackgroundColor = () => {
     const randomNumber = Math.floor(Math.random() * 16777215);
     const hexColor = `#${randomNumber.toString(16)}`;
