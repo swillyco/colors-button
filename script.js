@@ -1,6 +1,6 @@
 /* PICKS COLOR FROM ARRAY TO SET BACKGROUND COLOR ON CLICK
-var colors = ["lightblue","lightcoral","lightcyan","lightgreen","lightgrey","lightpink","lightsalmon","lightseagreen","lightskyblue","lightslategray","lightsteelblue","lightyellow","lavender"];
-var index = 0;
+const colors = ["lightblue","lightcoral","lightcyan","lightgreen","lightgrey","lightpink","lightsalmon","lightseagreen","lightskyblue","lightslategray","lightsteelblue","lightyellow","lavender"];
+const index = 0;
 document.querySelector("#submit").addEventListener("click", () => {
 if(index > colors.length - 1)
     index = 0;
