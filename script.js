@@ -8,11 +8,10 @@ document.body.style.backgroundColor = colors[index++];
 });
 */
 
-/*GENERATES RANDOM NUMBER TO SET BACKGROUND COLOR ON CLICK*/
-const setBackgroundColor = () => {
-    const randomNumber = Math.floor(Math.random() * 16777215);
-    const hexColor = `#${randomNumber.toString(16)}`;
-    document.body.style.backgroundColor = hexColor;
-};
-  submit.addEventListener("click", setBackgroundColor);
-  setBackgroundColor();
+/* GENERATES RANDOM NUMBER TO SET BACKGROUND COLOR ON CLICK */
+const getRandomHexColor = () => `#${(Math.floor(Math.random() * 0xFFFFFF)).toString(16)}`;
+//generates a random hexadecimal color code and returns it as a string.
+const setBackgroundRandomColor = () => document.body.style.backgroundColor = getRandomHexColor();
+//sets the background color of the body element to the generated random color.
+submit.addEventListener("click", setBackgroundRandomColor);
+setBackgroundRondomColor();
